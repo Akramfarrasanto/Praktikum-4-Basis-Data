@@ -44,6 +44,14 @@
 
 <img width="495" alt="gambar 8 praktikum ok" src="https://github.com/Akramfarrasanto/Praktikum-4-Basis-Data/assets/115552876/172a73c8-fe71-466b-bf7d-65da5e304053">
 
+### Kesimpulan
+#### Berdasarkan perintah-perintah SQL yang telah dijalankan, kita dapat mencapai beberapa kesimpulan terkait pegawai data dalam tabel "pegawai":
+#### - Jumlah pegawai: Jumlah baris atau record dalam tabel "pegawai" dapat dihitung menggunakan perintah SELECT COUNT(*) FROM pegawai;. kita perlu menjalankan perintah tersebut untuk mendapatkan jumlah pegawai secara akurat.
+#### - Total gaji pegawai: Total gaji dari semua pegawai dalam tabel "pegawai" dapat dihitung menggunakan perintah SELECT SUM(gaji) FROM pegawai;. Perintah ini akan menghasilkan jumlah total gaji dari seluruh pegawai.
+#### - Rata-rata gaji pegawai: Rata-rata gaji dari semua pegawai dalam tabel "pegawai" dapat dihitung menggunakan perintah SELECT AVG(gaji) FROM pegawai;. Perintah ini akan menghasilkan nilai rata-rata gaji dari seluruh pegawai.
+#### - Gaji terkecil: Nilai gaji terkecil dari seluruh pegawai dalam tabel "pegawai" dapat ditemukan menggunakan perintah SELECT MIN(gaji) FROM pegawai;. Perintah ini akan mengembalikan nilai gaji terendah.
+#### - Gaji terbesar: Nilai gaji terbesar dari seluruh pegawai dalam tabel "pegawai" dapat ditemukan menggunakan perintah SELECT MAX(gaji) FROM pegawai;. Perintah ini akan mengembalikan nilai gaji tertinggi.
+#### Gaji terbesar: Nilai gaji terbesar dari seluruh pegawai dalam tabel "pegawai" dapat ditemukan menggunakan perintah SELECT MAX(gaji) FROM pegawai;. Perintah ini akan mengembalikan nilai gaji tertinggi.
 
 ## Buat table hewan dan isi datanya seperti berikut:
 <img width="371" alt="gambar table hewan" src="https://github.com/Akramfarrasanto/Praktikum-4-Basis-Data/assets/115552876/1aed8694-0460-4c82-83f8-09e7d3e9c2a8">
@@ -80,5 +88,11 @@
 
 ![gambar 6 hewan](https://github.com/Akramfarrasanto/Praktikum-4-Basis-Data/assets/115552876/2b1c31c7-e922-4da6-abcd-90a29c98c3be)
 
-## Evaluasi dan Pertanyaan
-### Beri kesimpulan Anda!
+### Kesimpulan
+#### Dalam MySQL, kita dapat menggunakan query untuk menampilkan jumlah hewan berdasarkan kriteria tertentu. Kesimpulannya adalah:
+#### - Jumlah hewan berdasarkan pemilik (owner): Dengan menggunakan klausa group by antara kolom "owners" dan "id", serta fungsi COUNT, kita dapat menghitung jumlah hewan yang dimiliki oleh setiap pemilik.
+#### - Jumlah hewan berdasarkan spesies: Dengan menggunakan klausa GROUP BY pada kolom "species" dan fungsi COUNT, kita dapat menghitung jumlah hewan untuk setiap spesies.
+#### - Jumlah hewan berdasarkan jenis kelamin: Dengan menggunakan klausa GROUP BY pada kolom "sex" dan fungsi COUNT, kita dapat menghitung jumlah hewan untuk setiap jenis kelamin.
+#### - Jumlah hewan berdasarkan spesies dan jenis kelamin (khusus cat dan dog): Dengan menggunakan klausa WHERE untuk memfilter spesies yang diinginkan dan klausa GROUP BY pada kolom "species" dan "sex" serta fungsi COUNT, kita dapat menghitung jumlah hewan untuk kombinasi spesies dan jenis kelamin tertentu.
+#### - Jumlah hewan berdasarkan jenis kelamin yang diketahui: Dengan menggunakan klausa WHERE untuk memfilter jenis kelamin yang tidak NULL (diketahui) dan klausa GROUP BY pada kolom "sex" serta fungsi COUNT, kita dapat menghitung jumlah hewan untuk jenis kelamin yang diketahui.
+#### Dengan menggunakan query-query ini, kita dapat memperoleh informasi statistik tentang jumlah hewan berdasarkan kriteria yang relevan dalam basis data MySQL.
